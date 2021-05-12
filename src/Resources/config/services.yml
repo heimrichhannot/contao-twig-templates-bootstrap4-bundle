@@ -1,0 +1,4 @@
+services:
+  HeimrichHannot\TwigTemplatesBootstrap4Bundle\FrontendFramework\Bootstrap4Framework:
+    tags: ['huh.contao_twig_templates.framework']
+    autowire: true
