@@ -1,4 +1,10 @@
 services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
   HeimrichHannot\TwigTemplatesBootstrap4Bundle\FrontendFramework\Bootstrap4Framework:
     tags: ['huh.contao_twig_templates.framework']
-    autowire: true
+    
+  HeimrichHannot\TwigTemplatesBootstrap4Bundle\EventListener\Contao\:
+    resource: '../../EventListener/Contao/*'

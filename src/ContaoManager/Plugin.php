@@ -15,7 +15,6 @@ use Contao\ManagerPlugin\Bundle\Config\ConfigInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
 use HeimrichHannot\TwigTemplatesBootstrap4Bundle\HeimrichHannotTwigTemplatesBootstrap4Bundle;
-use HeimrichHannot\TwigTemplatesBundle\HeimrichHannotTwigTemplatesBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class Plugin implements BundlePluginInterface, ConfigPluginInterface
@@ -30,7 +29,7 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
         return [
             BundleConfig::create(HeimrichHannotTwigTemplatesBootstrap4Bundle::class)->setLoadAfter([
                 ContaoCoreBundle::class,
-                HeimrichHannotTwigTemplatesBundle::class,
+                'HeimrichHannot\TwigTemplatesBundle\HeimrichHannotTwigTemplatesBundle',
             ]),
         ];
     }

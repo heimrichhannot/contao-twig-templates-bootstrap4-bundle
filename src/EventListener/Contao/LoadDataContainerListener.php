@@ -13,7 +13,7 @@ use Contao\CoreBundle\ServiceAnnotation\Hook;
 /**
  * Class LoadDataContainerListener.
  *
- * @Hook()
+ * @Hook("loadDataContainer")
  */
 class LoadDataContainerListener
 {

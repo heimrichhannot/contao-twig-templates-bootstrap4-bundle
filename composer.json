@@ -5,7 +5,7 @@
   "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^7.2",
-    "contao/core-bundle": "^4.4",
+    "contao/core-bundle": "^4.9",
     "heimrichhannot/contao-twig-templates-bundle": "^2.0",
     "heimrichhannot/contao-utils-bundle": "^2.101"
   },
